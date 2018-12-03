@@ -150,7 +150,7 @@ PublishPlugin.prototype.run = function() {
     return ipfs.files.add(content).then((results) => {
         console.log('  Hash: ' + results[0].hash);
         let subdomain = base32.encode(base58.decode(results[0].hash).slice(2));
-        console.log('  URL:  https://0xg' + subdomain + '.meeseeks.app');
+        console.log('  URL:  https://0xg' + subdomain + '.eth.link');
     });
 }
 plugins['publish'] = new PublishPlugin();
