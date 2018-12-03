@@ -19,7 +19,7 @@ function now() {
 var bumps = '';
 var t0 = now();
 function drawBumps() {
-  document.getElementById('_mo').textContent = "loading secure content... (meeseeks.app bootstrap)\n" +
+  document.getElementById('_mo').textContent = "loading secure content... (eth.link bootstrap)\n" +
      bumps + Config.spinner[parseInt(String((now() - t0) / 500)) % Config.spinner.length];
 }
 
@@ -920,7 +920,7 @@ function getMeeseeks(name) {
 }
 bump();
 
-console.log("Look at me! I'm Meeseeks.app!");
+console.log("Look at me! I'm eth.link!");
 
 (function() {
   var hostname = location.host.split(':')[0]
